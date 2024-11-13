@@ -9,6 +9,10 @@ def read_array():
         print("Error: number of elements cannot exceed", N_MAX)
         return [], 0
     
+    if n < 0:
+        print("Error: number of elements cannot be negative")
+        return [], 0
+    
     print("Enter elements:")
     for i in range(n):
         tmp = int(input())
