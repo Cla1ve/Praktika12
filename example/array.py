@@ -15,10 +15,15 @@ def read_array():
             return [], 0
         
         print("Enter elements:")
+        sum = 0
         for i in range(n):
             tmp = int(input())
+            sum += tmp
             arr.append(tmp)
-        
+            
+        print(f"Sum of elements: {sum}")
+        print(f"Average: {sum/n if n > 0 else 0}")
+            
     except ValueError:
         print("Error: Please enter valid numbers")
         return [], 0
@@ -30,10 +35,10 @@ def print_array(arr, n):
     if n == 0:
         print("Array is empty!")
         return
-    print("Array:", end=" ")
+    print("Array elements:", end=" ")
     for i in range(n):
         print(arr[i], end=" ")
-    print()
+    print("\nArray size:", n)
 
 def main():
     # Ввод массива
