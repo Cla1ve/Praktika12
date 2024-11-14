@@ -14,18 +14,22 @@ def read_array():
         return [], 0
     
     print("Enter elements:")
+    sum = 0
     for i in range(n):
         tmp = int(input())
+        sum += tmp
         arr.append(tmp)
     
+    print(f"Sum of elements: {sum}")
+    print(f"Average: {sum/n if n > 0 else 0}")
     return arr, n
 
 def print_array(arr, n):
     """Функция для вывода массива"""
-    print("Array:", end=" ")
+    print("Array elements:", end=" ")
     for i in range(n):
         print(arr[i], end=" ")
-    print()
+    print("\nArray size:", n)
 
 def main():
     # Ввод массива
@@ -35,4 +39,4 @@ def main():
         print_array(arr, n)
 
 if __name__ == "__main__":
-    main() 
+    main()
