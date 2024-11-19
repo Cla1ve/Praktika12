@@ -47,6 +47,10 @@
 
    if __name__ == "__main__":
        main()
+<<<<<<< HEAD
 
        #ggggg
+=======
+       #конец 
+>>>>>>> a531af0882d09a37634235f9a47ad4de6f9768f8
        print()
